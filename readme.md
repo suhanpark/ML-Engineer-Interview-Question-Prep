@@ -6,7 +6,7 @@
 
  $$y = f(W \ast x + b)$$
   
-  where$\ast$represents the convolution operation,$W$is the kernel,$x$is the input, and$b$is the bias.
+  where $\ast$ represents the convolution operation, $W$ is the kernel, $x$ is the input, and $b$ is the bias.
 
 - **RNN**: Designed for sequential data like time-series, using a feedback loop to retain previous information:
   
@@ -26,7 +26,7 @@ Sensor fusion combines data from multiple sensors to achieve better perception a
   - Project LIDAR data onto the camera image plane using:
     
    $$P_{2D} = K [R | T] P_{3D}$$
-   $K$: Camera intrinsic matrix,$R$: Rotation matrix,$T$: Translation vector.
+   $K$: Camera intrinsic matrix, $R$: Rotation matrix, $T$: Translation vector.
   - Merge features using a neural network:
     - Inputs: RGB image, LIDAR point cloud.
     - Architecture: Two parallel CNN streams, one for each sensor, followed by concatenation and fully connected layers.
@@ -93,7 +93,7 @@ Sensor fusion combines data from multiple sensors to achieve better perception a
     
    $$x^* = \arg \min \sum_{i,j} ||z_{ij} - h(x_i, x_j)||^2$$
     
-   $z_{ij}$: Relative motion,$h$: Measurement model.
+   $z_{ij}$: Relative motion, $h$: Measurement model.
 
 
 ---
@@ -121,7 +121,7 @@ RL is used to optimize driving policies, such as fuel-efficient driving or obsta
     
    $$L_{\text{Grad-CAM}}^c = \text{ReLU}\left( \sum_k w_k^c A^k \right)$$
     
-   $A^k$: Activation map,$w_k^c$: Gradients w.r.t. class$c$.
+   $A^k$: Activation map, $w_k^c$: Gradients w.r.t. class$c$.
 
 
 ---
@@ -141,7 +141,7 @@ RL is used to optimize driving policies, such as fuel-efficient driving or obsta
      
     $$f(n) = g(n) + h(n)$$
 
-    $g(n)$: Path cost,$h(n)$: Heuristic.
+    $g(n)$: Path cost, $h(n)$: Heuristic.
 
 
 ---
@@ -2590,9 +2590,8 @@ YOLO-11 is a hypothetical advanced version that builds on the core principles of
     - Steps:
       1. Compute covariance matrix $\Sigma = \frac{1}{n} X^T X$.
       2. Compute eigenvectors and eigenvalues.
-      3. Project data onto top $k$eigenvectors:
-         $ Z = XW_k
-         \]
+      3. Project data onto top $k$ eigenvectors:
+         $Z = XW_k$
 
 ## Advance Deep Learning
 
